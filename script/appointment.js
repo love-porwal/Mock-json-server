@@ -23,7 +23,7 @@ select.addEventListener("change", () => {
         getData()
 
     } else {
-        fetch(`http://localhost:3000/appointments?specialization=${select.value} `)
+        fetch(`https://erin-weary-mite.cyclic.app/appointments?specialization=${select.value} `)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data)
@@ -39,7 +39,7 @@ const search = document.querysearchor("#search")
 
 search.addEventListener("click", () => {
     if (doctor.value !== "") {
-        fetch(`http://localhost:3000/appointments?name=${doctor.value} `)
+        fetch(`https://erin-weary-mite.cyclic.app/appointments?name=${doctor.value} `)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data)
@@ -96,7 +96,7 @@ function displayTable(data) {
             let obj = {
                 slots: el.slots - 1,
             };
-            fetch(`http://localhost:3000/appointments/${el.id}`, {
+            fetch(`https://erin-weary-mite.cyclic.app/appointments/${el.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

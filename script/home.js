@@ -20,7 +20,7 @@ let userlogin = (obj) => {
 
     let { email, password } = obj;
 
-    fetch(`http://localhost:3000/users?email=${email}&password=${password}`)
+    fetch(`https://erin-weary-mite.cyclic.app/users?email=${email}&password=${password}`)
         .then((res) => res.json())
         .then((data) => {
             if (data.length >= 1) {

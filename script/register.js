@@ -22,7 +22,7 @@ let userregister = (obj) => {
 
     let { email, password } = obj;
 
-    fetch(`http://localhost:3000/users`,{
+    fetch(`https://erin-weary-mite.cyclic.app/users`,{
         method:"POST",
         headers:{
             "content-type": "application/json",

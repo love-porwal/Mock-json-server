@@ -35,7 +35,7 @@ button.addEventListener("click", (e) => {
 
 let DoctorData = (obj) => {
 
-    fetch(`http://localhost:3000/appointments`, {
+    fetch(`https://erin-weary-mite.cyclic.app/appointments`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -55,7 +55,7 @@ let DoctorData = (obj) => {
 
 let getData = () => {
 
-    fetch(`http://localhost:3000/appointments`)
+    fetch(`https://erin-weary-mite.cyclic.app/appointments`)
         .then((res) => res.json())
         .then((data) => {
             console.log(data)
@@ -101,7 +101,7 @@ function displayTable(data) {
         tbody.append(tr)
 
         Delete.addEventListener("click",()=>{
-            fetch(`http://localhost:3000/appointments/${el.id}`, {
+            fetch(`https://erin-weary-mite.cyclic.app/appointments/${el.id}`, {
                 method: "DELETE", 
             })
             .then((res) => res.json())
