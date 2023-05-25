@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "appointments": [
+    {
+      "name": "a",
+      "image": "hj",
+      "experience": "4",
+      "location": "Sheopur",
+      "date": "2023-05-02",
+      "slots": 4,
+      "fee": "343",
+      "specialization": "Cardiologist",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "username": "Love Porwal",
+      "email": "lluvporwall@gmail.com",
+      "password": "luv",
+      "checkDoctor": "on",
+      "id": 1
+    }
+  ]
+}

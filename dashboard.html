@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/home.css" />
+
+  </head>
+  <body>
+    <nav>
+        <div><a href="./index.html">Home page</a></div>
+        <div><a href="./dashboard.html">Doctor’s Dashboard</a></div>
+        <div><a href="./appointment.html">Book Appointments</a></div>
+      </nav>
+
+    <div id="maindoctor">
+      <form action="#">
+        <input type="text" id="name" placeholder="Name" /> <br />
+        <input type="text" id="image" placeholder="Image URL" /> <br />
+        <select name="" id="specialization ">
+          <option value="">select</option>
+          <option value="Cardiologist">Cardiologist</option>
+          <option value="Dermatologist">Dermatologist</option>
+          <option value="Pediatrician">Pediatrician</option>
+          <option value="Psychiatrist ">Psychiatrist</option>
+        </select>
+        <br />
+        <input type="number" id="experience" placeholder="Experience" /> <br />
+        <input type="text" id="location" placeholder="Location" /> <br />
+        <input type="date" id="date" placeholder="Date" /> <br />
+        <input type="number" id="slots" placeholder="Slots " /> <br />
+        <input type="number" id="fee" placeholder="Fee " /> <br />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name of the Doctor</th>
+            <th>Specialization</th>
+            <th>experience</th>
+            <th>location</th>
+            <th>slots</th>
+            <th>Edit </th>
+            <th>Delete</th>
+            <th>Appointments</th>
+        </tr>
+        <tbody></tbody>
+    </table>
+  </body>
+</html>
+<script src="./script/dashboard.js"></script>
+
